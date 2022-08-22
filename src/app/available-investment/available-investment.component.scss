@@ -1,1 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+.scroll{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    max-width: 220rem;
+    overflow-x: scroll;
+    column-gap: 2rem;
+.green-circle {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #43BB0C;
+    border-radius: 0.6rem;
+    border-color: white;
+    border: solid;
+  }
+  
+}
+small {
+    display: flex;
+    margin-top: -1.7rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    justify-content: space-between;
+  }
+.card-title{
+    text-align: start;
+    margin-bottom:3rem;
+    margin-left: 3rem;
+    margin-top: 1.9rem;
+}
+.date{
+    margin-right: 9rem;
+    margin-bottom: -2rem;
+    text-align: center;
+}
+.white-box{
+    margin-left: 18rem;
+}
