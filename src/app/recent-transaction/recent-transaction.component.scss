@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.table-container {
+  border: 1px solid #fff;
+  width: 100%;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 2rem 2rem;
+}
+
+.recent-transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recent-transaction p {
+  margin-right: 20px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  min-width: 700px;
+}
+
+.content-table thead tr {
+  text-align: left;
+  width: 74px;
+  height: 19px;
+  left: 334px;
+  top: 673px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 133.8%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #332e2c;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background: #f5f5fa;
+}
+
+.content-table tr td {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Mulish";
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #879dad;
+}
+
+.comp,
+.comple {
+  border: 1px solid #0fc578;
+  border-radius: 6px;
+  background: rgba(15, 197, 120, 0.2);
+  width: 65%;
+  height: 20px;
+  padding: 0.05rem 0.05rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #129d62;
+}
+
+.pend {
+  border: 1px solid #daa917;
+  border-radius: 6px;
+  background: rgba(255, 193, 7, 0.2);
+  width: 65%;
+  height: 20px;
+  padding: 0.05rem 0.05rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #daa917;
+}
+.failed {
+  border: 1px solid #eb5757;
+  border-radius: 6px;
+  background: #f4d3d8;
+  width: 65%;
+  height: 20px;
+  padding: 0.05rem 0.05rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #eb5757;
+}
