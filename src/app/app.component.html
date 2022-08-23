@@ -3,96 +3,182 @@
   .btn-primary {
     background: #080f50 !important;
   }
+
   .value {
     outline: none;
     background: #f5f5fa;
     border: none;
   }
+
+  @media (min-width: 768px) {
+    .btn-primary {
+      background: red !important;
+    }
+
+    .navbar-toggler {
+      display: none;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 3.4rem;
+      color: white;
+    }
+
+    h3 {
+      font-size: 0.87rem;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+    }
+
+    h5 {
+      font-size: 0.77rem;
+    }
+
+    small {
+      font-size: 0.75rem;
+    }
+
+    .i {
+      font-size: medium;
+    }
+
+    p {
+      font-size: small;
+    }
+
+  }
+
+  @media (max-width: 320px) {
+
+    .wavy {
+    margin-top: 8rem;
+    margin-left:1.8rem;
+    filter: brightness(0.5);
+  }
+    .navbar-toggler {
+      display: flex;
+      
+    }
+
+    .h1 {
+      font-size: small;
+    }
+
+    h2 {
+      font-size: small;
+      color: white;
+    }
+
+    h3 {
+      font-size: smaller;
+    }
+
+    h4 {
+      font-size: smaller;
+    }
+
+    h5 {
+      font-size: smaller;
+    }
+
+    small {
+      font-size: 0.75rem;
+    }
+
+    .i {
+      font-size: smaller;
+    }
+
+    p {
+      font-size: x-small;
+    }
+
+  }
 </style>
 
+
+
+
+
 <div class="container-fluid">
+
+
   <div class="row flex-nowrap">
-    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-      <div
-        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
-      >
-        <span class="fs-5 d-none d-sm-inline">
-          <img
-            class="d-flex align-items-center d-sm pb-3 mb-md-0 me-md-auto"
-            src="../assets/images/Large white WNL 1 (1).png"
-            alt=""
-          />
-        </span>
 
-        <div
-          class="pb-4 btn d-flex align-items-center text-white text-decoration-none fs-5 d-none d-sm-inline"
-        >
-          <button type="submit" class="btn btn-success">Send Money</button>
-        </div>
+    <div class="col-auto col-md-3 col-xl-2 col-sm-1 px-sm-2 px-0 bg-dark">
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        &#9776;
+      </button>    
+         
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+          <ul>
+            <span class="fs-5 d-none d-sm-inline">
+              <img class="d-flex align-items-center d-sm pb-3 mb-md-0 me-md-auto"
+                src="../assets/images/Large white WNL 1 (1).png" alt="" />
+            </span>
 
-        <ul
-          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-center"
-          id="logo"
-        >
-          <li class="nav-item">
-            <a
-              href="#"
-              data-bs-parent="collapse"
-              class="nav-link align-middle px-0"
-            >
-              <img class="fs-4" src="../assets/images/Group.png" alt="" />
-              <span class="ms-1 d-none d-sm-inline text-white">Home</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-              data-bs-parent="collapse"
-              class="nav-link px-0 align-middle"
-            >
-              <img class="fs-4" src="../assets/images/Group (3).png" alt="" />
-              <span class="ms-1 d-none d-sm-inline text-white">Wallet</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-              data-bs-parent="collapse"
-              class="nav-link px-0 align-middle"
-            >
-              <img class="fs-4" src="../assets/images/Group (4).png" alt="" />
-              <span class="ms-1 d-none d-sm-inline text-white">History</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-              data-bs-parent="collapse"
-              class="nav-link px-0 align-middle"
-            >
-              <img class="fs-4" src="../assets/images/Group 38.png" alt="" />
-              <span class="ms-1 d-none d-sm-inline text-white">Recipent</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-              data-bs-parent="collapse"
-              class="nav-link px-0 align-middle"
-            >
-              <img class="fs-4" src="../assets/images/Group (5).png" alt="" />
-              <span class="ms-1 d-none d-sm-inline text-white">My Account</span>
-            </a>
-          </li>
-        </ul>
-        <!-- <div class="pb-4 d-flex align-items-start">
+            <div class="pb-4 btn d-flex align-items-center text-white text-decoration-none fs-5 d-none d-sm-inline">
+              <button type="submit" class="btn btn-success">Send Money</button>
+            </div>
+
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-center" id="logo">
+              <li class="nav-item">
+                <a href="#"  class="nav-link align-middle px-0">
+                  <img class="fs-4" src="../assets/images/Group.png" alt="" />
+                  <span class="ms-1 d-none d-sm-inline text-white">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav-link px-0 align-middle">
+                  <img class="fs-4" src="../assets/images/Group (3).png" alt="" />
+                  <span class="ms-1 d-none d-sm-inline text-white">Wallet</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav-link px-0 align-middle">
+                  <img class="fs-4" src="../assets/images/Group (4).png" alt="" />
+                  <span class="ms-1 d-none d-sm-inline text-white">History</span>
+                </a>
+              </li>
+              <li>
+                <a href=""  class="nav-link px-0 align-middle">
+                  <img class="fs-4" src="../assets/images/Group 38.png" alt="" />
+                  <span class="ms-1 d-none d-sm-inline text-white">Recipent</span>
+                </a>
+              </li>
+              <li>
+                <a href=""class="nav-link px-0 align-middle">
+                  <img class="fs-4" src="../assets/images/Group (5).png" alt="" />
+                  <span class="ms-1 d-none d-sm-inline text-white">My Account</span>
+                </a>
+              </li>
+              <div class="wavy">
+                <img src="../assets/images/wavy.png" />
+                <img src="../assets/images/wavy.png" />
+                <img src="../assets/images/wavy.png" />
+                <img src="../assets/images/wavy.png" />
+
+              </div>
+              <button type="button" class="btn btn-outline-light">Log Out</button>
+            </ul>
+            <!-- </div> -->
+            <!-- <div class="pb-4 d-flex align-items-start">
             <img src="../assets/images/Vector (7).png" alt="vector" /> -->
-        <!-- <img
+            <!-- <img
               class="d-inline"
               src="../assets/images/Vector (7).png"
               alt="vector"
             /> -->
-        <!-- <img
+            <!-- <img
               class="d-inline"
               src="../assets/images/Vector (7).png"
               alt="vector"
@@ -102,26 +188,27 @@
               src="../assets/images/Vector (7).png"
               alt="vector"
             /> -->
-        <!-- </div> -->
-        <div
+            <!-- </div> -->
+            <!-- <div
           class="pb-4 btn d-flex align-items-center text-white text-decoration-none"
         >
           <button type="submit" class="btn btn-outline-light">Logout</button>
+        </div> -->
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="col py-3" style="background-color: #f5f5fa">
-      <nav
-        class="navbar navbar-expand-lg d-flex align-items-sm-start"
-        style="background: #f5f5fa"
-      >
-        <div class="container w-100 d-flex justify-content-end gap-3">
-          <img src="../assets/images/Notification.png" alt="notify" />
-          <img src="../assets/images/Group (6).png" alt="account" />
-          <select class="value">
-            <option value="Toby Okeke">Toby Okeke</option>
-          </select>
+      <nav class="navbar navbar-expand-lg d-flex align-items-sm-start" style="background: #f5f5fa">
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+          <div class="container w-100 d-flex justify-content-end gap-3">
+            <img src="../assets/images/Notification.png" alt="notify" />
+            <img src="../assets/images/Group (6).png" alt="account" />
+            <select class="value">
+              <option value="Toby Okeke">Toby Okeke</option>
+            </select>
+          </div>
         </div>
       </nav>
 
@@ -155,9 +242,7 @@
           <div class="row">
             <div class="col-md-8">
               <div class="card w-100 mt-2 px-3 py-2">
-                <div
-                  class="d-flex align-items-center justify-content-between text-secondary mt-2 mb-3"
-                >
+                <div class="d-flex align-items-center justify-content-between text-secondary mt-2 mb-3">
                   <p class="fs-4 fw-semibold">Recent Transactions</p>
                   <p class="fs-5 fw-semibold">View all</p>
                 </div>

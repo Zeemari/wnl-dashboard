@@ -1,3 +1,12 @@
+@media (max-width: 320px) {
+  .flex-grow{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+}
+  
+  
   .flex-grow{
     background-color: whitesmoke;
     border: 2rem;
@@ -41,28 +50,8 @@
      display: flex;
      margin-right:-12rem;
 }
-  
-  .flag2 {
-     background-color: whitesmoke;
-     border: 2rem;
-     border-radius: 0.4rem;
-     display: flex;
-     margin-left: 0.5rem;
-     gap: 1rem;
-     padding-left: 1rem;
-     width: 16.9rem;
-     height: 3rem;
-     margin-bottom: 0.7rem;
-     margin-top: 0.4rem;
-   }
-   .flag2 span{
-     display: flex;
-     margin-top: 1rem;
-     margin-left: -4rem;
- 
-   }
-  
-   .currency button {
+    
+   .btn-success {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -70,10 +59,10 @@
      margin-bottom: 2rem;
      color: white;
      cursor: pointer;
-     height: 2.5rem;
+     height: 2.2rem;
      border-radius: 0.2rem;
 
-     padding-right: 6rem;
+     padding-right: 5rem;
      padding-left: 6rem;
      background-color: #3cb371;
      font-size: 0.8rem;
@@ -118,3 +107,4 @@
      align-items: center;
      font-size: 0.6rem;
    }
+

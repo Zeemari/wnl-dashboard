@@ -9,6 +9,7 @@ import { AvailableInvestmentComponent } from './available-investment/available-i
 import { RecentTransactionComponent } from './recent-transaction/recent-transaction.component';
 import { RecentActivitiesComponent } from './recent-activities/recent-activities.component';
 import { EstimatorComponent } from './estimator/estimator.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { EstimatorComponent } from './estimator/estimator.component';
     RecentActivitiesComponent,
     EstimatorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

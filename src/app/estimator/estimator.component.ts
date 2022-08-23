@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstimatorComponent implements OnInit {
 
+  public isMenuCollapsed = true;
   constructor() { }
 
   ngOnInit(): void {
