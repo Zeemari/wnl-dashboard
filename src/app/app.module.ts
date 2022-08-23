@@ -7,8 +7,8 @@ import { ActiveComponent } from './active/active.component';
 import { BalanceComponent } from './balance/balance.component';
 import { AvailableInvestmentComponent } from './available-investment/available-investment.component';
 import { RecentTransactionComponent } from './recent-transaction/recent-transaction.component';
-import { RecentActivitiesComponent } from './recent-activities/recent-activities.component';
 import { EstimatorComponent } from './estimator/estimator.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { EstimatorComponent } from './estimator/estimator.component';
     BalanceComponent,
     AvailableInvestmentComponent,
     RecentTransactionComponent,
-    RecentActivitiesComponent,
     EstimatorComponent,
+    ProfileComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

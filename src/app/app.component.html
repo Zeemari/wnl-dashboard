@@ -134,9 +134,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8">
-              <div class="col-8 d-flex align-items-sm-start">
-                <app-active></app-active>
-                <app-balance></app-balance>
+              <div class="col d-flex align-items-center justify-content-center">
+                <div class="col-8 d-flex align-items-sm-start">
+                  <app-active></app-active>
+                  <app-balance></app-balance>
+                </div>
               </div>
               <div class="container">
                 <div class="row">
@@ -154,100 +156,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8">
-              <div class="card w-100 mt-2 px-3 py-2">
-                <div
-                  class="d-flex align-items-center justify-content-between text-secondary mt-2 mb-3"
-                >
-                  <p class="fs-4 fw-semibold">Recent Transactions</p>
-                  <p class="fs-5 fw-semibold">View all</p>
-                </div>
-                <div class="row">
-                  <div class="col text-center">
-                    <p class="fs-6 fw-bold text-secondary">RECIPIENT</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6 fw-bold text-secondary">TRANSACTION</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6 fw-bold text-secondary">DATE</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6 fw-bold text-secondary">STATUS</p>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">Palm Oil</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">25Units 62500 NGN</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">2/4/2020</p>
-                  </div>
-                  <div class="col text-center">
-                    <button class="btn btn-outline-success btn-sm">
-                      COMPLETED
-                    </button>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">Maize</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">25Units 62500 NGN</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">2/4/2020</p>
-                  </div>
-                  <div class="col text-center">
-                    <button class="btn btn-outline-success btn-sm">
-                      COMPLETED
-                    </button>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">Maize</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">25Units 62500 NGN</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">2/4/2020</p>
-                  </div>
-                  <div class="col text-center">
-                    <button class="btn btn-outline-success btn-sm">
-                      COMPLETED
-                    </button>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">Maize</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">25Units 62500 NGN</p>
-                  </div>
-                  <div class="col text-center">
-                    <p class="fs-6text-secondary">2/4/2020</p>
-                  </div>
-                  <div class="col text-center">
-                    <button class="btn btn-outline-success btn-sm">
-                      COMPLETED
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <app-recent-transaction></app-recent-transaction>
             </div>
             <div class="col">
-              <div class="col-md mt-3">
-                <div class="card bg-light" style="height: 200px">Profile</div>
-              </div>
-              <div class="col-md mt-4">
-                <div class="card bg-light" style="height: 75px">Referral</div>
-              </div>
+              <app-profile></app-profile>
             </div>
           </div>
         </div>
