@@ -1,10 +1,17 @@
 <div class="card bg-light mt-1">
+ 
+      
+  
+     
     <h5 class="card-title rounded text-black-50">Estimator</h5>
     
-    <div class="mb-3 d-flex flex-grow">
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">Estimator
+      </button>
+     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+
+    <div class="mb-3 d-flex flex-grow" (click)="isMenuCollapsed= true">
     <div class="number">You invest
-      <!-- <small>You invest</small> -->
-      <input type="number" class="form-control form-control-sm" name="number1">
+      <input type="number" class="form-control form-control-xs" name="number1">
     </div>
     <div class="nigeria-line col-sm-6">
     <img class="line" src="../../assets/images/Line 19.png">
@@ -51,15 +58,17 @@
     •
   </div>
 
-  <div class="flag2">
-    <div class="number">
-      <small>You Get</small>
-      <input type="number" readonly class="form-control">
+  <div class="mb-3 d-flex flex-grow">
+    <div class="number">You invest
+      <input type="number" readonly class="form-control form-control-sm" name="number1">
     </div>
-    <img class="line" src="../../assets/images/Line 19.png" />
-    <img class="nigerian" src="../assets/images/download (1) 2.png" />
+    <div class="nigeria-line col-sm-6">
+    <img class="line" src="../../assets/images/Line 19.png">
+    <img class="nigerian" src="../../assets/images/download (1) 2.png" />
     <h4 class="ngn">NGN</h4>
     <span class="material-icons-outlined">expand_more</span>
+    </div>
   </div>
-  <button type="button" onclick="">Invest now</button>
+  <button type="button" class="btn btn-success btn-md">Invest now</button>
+</div>
 </div>
