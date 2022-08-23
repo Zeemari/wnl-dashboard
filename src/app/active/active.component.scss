@@ -1,1 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.bg-light {
+  width: 300px;
+  height: 120px;
+}
+
+@media screen and (max-width: 992px) {
+  .bg-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bg-light {
+    display: block;
+    width: 240px;
+    height: 120px;
+  }
+}
